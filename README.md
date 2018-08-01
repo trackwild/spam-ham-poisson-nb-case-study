@@ -33,6 +33,13 @@ Do we reject or not reject the null hypothesis? What's the p-value?
 
 ## Part IV
 
+- You are a human spam detector.
+- Create an interactive program that will randomly show you a message from the above list.
+- You have to determine if it's spam or not (do not look at the label).
+- Record your answer for each message.
+- How accurate were your predictions?
+- How many type 1 and type 2 error did you have?
+
 ## Part V
 
 

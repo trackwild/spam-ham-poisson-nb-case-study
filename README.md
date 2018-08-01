@@ -71,3 +71,14 @@ predictions = nb.predict(X_test)
 - What is the accuracy from your trained model?
 - How many Type 1 and Type 2 errors occurred?
 - What performed better, the Human or NB model?
+
+## Part VI
+
+You've now built a model that hopefully filters out all those spam messages from your inbox.
+
+Rerun the entire dataset against your Naive Bayes model. Now, in theory it has filtered out all the spam messages. But you can actually check to see if any spams got through the filter.
+
+- Is this a Type 1 or Type 2 error?
+- How many spam messages were not successfully detected?
+- Redo the hypothsis testing from `Part II` but with your new (mostly filtered) dataset.
+- Do we reject or not reject the null hypothesis? What's the p-value?

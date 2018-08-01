@@ -63,6 +63,8 @@ X_train, X_test, y_train, y_test = train_test_split(tfidfs, LIST_OF_LABELS, test
 
 nb = MultinomialNB().fit(X_train, y_train)
 predictions = nb.predict(X_test)
+
+# you may need to add more code here ...
 ```
 
 - What is the baseline accuracy?

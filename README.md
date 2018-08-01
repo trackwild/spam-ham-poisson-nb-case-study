@@ -1,8 +1,5 @@
 # spam-ham-poisson-nb-case-study
 
-***
-a
+## a
 
-
-***
-b
+### b

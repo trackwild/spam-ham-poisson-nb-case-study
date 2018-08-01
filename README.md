@@ -24,6 +24,13 @@ Do we reject or not reject the null hypothesis? What's the p-value?
 
 ## Part III
 
+- You will be using the Poisson Probability Distribution
+- https://en.wikipedia.org/wiki/Poisson_distribution
+- It is parameterized by lambda
+- In `Part I` you figured out how many messages were spam
+- Let's imagine that you receive that many spam messages every four weeks
+- What's the probability that you will get at least 30 spam messages per day?
+
 ## Part IV
 
 ## Part V

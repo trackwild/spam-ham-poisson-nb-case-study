@@ -38,8 +38,34 @@ Do we reject or not reject the null hypothesis? What's the p-value?
 - You have to determine if it's spam or not (do not look at the label).
 - Record your answer for a small sample of messages (about 10).
 - How accurate were your predictions?
-- How many type 1 and type 2 error did you have?
+- How many Type 1 and Type 2 error did you have?
 
 ## Part V
 
+In Part IV you were a spam detector. Let's see if we can automate this process and hopefully get better accuracy.
 
+You will be creating a Naive Bayes Text Classification Model to determine if an incoming message is spam or not.
+
+Here's some sample code:
+
+```
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.model_selection import train_test_split
+count_vect = CountVectorizer()
+tfidf_transformer = TfidfTransformer()
+
+counts = count_vect.fit_transform(LIST_OF_MESSAGES)  # change
+tfidfs = tfidf_transformer.fit_transform(counts)
+
+X_train, X_test, y_train, y_test = train_test_split(tfidfs, LIST_OF_LABELS, test_size=0.33, random_state=42) #change
+
+nb = MultinomialNB().fit(X_train, y_train)
+predictions = nb.predict(X_test)
+```
+
+- What is the baseline accuracy?
+- What is the accuracy from your trained model?
+- How many Type 1 and Type 2 errors occurred?
+- What performed better, the Human or NB model?
